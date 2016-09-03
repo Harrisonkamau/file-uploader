@@ -41,3 +41,7 @@ app.post('/upload', function(req, res){
   form.parse(req);
 
 });
+// create and start server
+var server = app.listen(3000, function(){
+  console.log('Server listening on port 3000');
+});
